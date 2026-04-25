@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');    /*  font-family: "Fredericka the Great", serif; // <weight>: Use a value from 100 to 900 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  /* scroll-behavior: smooth; */
+}
+
+
+
+
+
+
+
+
+/* Common Css classes Code */
+
+.set-background{
+    /* background-image: url('../images/images-final/Website-backgroung.png'); */
+    height: 110vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.img-caption{
+    font-family: cursive;
+    /* background-color: red; */
+    display:inline;                 /* due to this scollbar invisible while h1 position changing*/
+    font-size: 100px;
+    font-weight: 600 !important;
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);     /* */
+    animation: customMove 3s;
+    /* animation-fill-mode: forwards;  */
+    /* animation-timing-function: ease;    */
+}
+@keyframes customMove {
+    /*from {left: 0px;}                 /* default position from left 0
+    /* to{left:800px;} */               /* use (to) if not set img-caption position center; */
+
+    from { left:1100px; top:350px;}     /* default position from left:1000px top:350px
+    /* to { left:200px; top:200px;} */
+
+    /* 10%{top: 0px; left:600px;}      */
+    /* 50%{top:0px; left:0px;} */
+}
+
+.rice-animate{
+    position: absolute;
+    animation: position 10s infinite ease-in-out;
+}
+@keyframes position {    
+    /* tried by below and its used only single element position*/
+    /* 50%{ top: 100px;   left: 200px; } */
+    
+    /* from{ transform: translate(0, 0); }
+    to { transform: translate(100px, 50px); } */
+
+    /* Use Below Once Understanded */
+    50%{ transform: translate(0px, -100px); }      /* x and y axis */
+}
+
+
+/* this below method not supported
+.ease-in-text{
+    position: relative;
+    color:yellow !important;
+    animation-timeline: view();       this method not supported
+    overflow: hidden;
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn{
+    from{ transform: translate(0, 0); }
+    to { transform: translate(100px, 50px); }
+}
+*/
+
+/* fade-in working method */
+.ease-in-textRL{
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateX(40px);
+}
+.ease-in-textLR{
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateX(-40px);
+}
+.ease-in-text.showtexts{
+    opacity: 1;
+    transform: translate(0);    /* moves back to original position of div container */
+}
+
+/* .ease-in-textRL.showtexts{
+    opacity: 1;
+    transform: translate(0);
+} */
+
+.upTxtBT{
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(40px);
+}
+.upTxtOb.showtexts{
+    opacity: 1;
+    transform:translateY(0px);
+}
+
+
+
+
+
+.product-container{
+    font-family: cursive;
+    background-color: wheat;
+    /* font-size: 20px !important; */
+    padding: 0px 10px !important;
+}
+
+.product-content{
+    font-size: 12px;
+    background-color: rgb(247, 232, 205);
+}
+
+.ws-container{
+    font-family: cursive;
+    background-color: wheat;
+    padding: 10px 15px !important;   
+}
+.pos-align{
+    position: absolute;
+    left: -80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home page */
+
+body{
+  font-family: "Ubuntu", sans-serif;
+  /* font-weight: 300; */
+  background-image: url('../images/images-final/Website-backgroung.png');
+  background-repeat: repeat-x;                          /* vertical repeat image */
+  background-size: cover;
+  background-attachment: fixed;                         /* prevent from scrolling image */
+  background-position:center;
+  /* position:fixed; */
+}
+
+/* #vBar{
+    height: 40px;
+    width: px !important;
+    background-color:white;
+    //margin-top: -100px; 
+    color:white;
+} */
+
+
+
+.style-custom{
+    background-color: antiquewhite;
+    font-family: cursive;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+
+.navbar-nav .nav-item{
+    position: relative;
+    margin-left: 5px;
+}
+.navbar-nav .nav-item::after{           /* bottom border */
+    background-image: linear-gradient(rgb(103, 140, 210), grey);
+    height: 5px;
+    width: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';            /* then only show border*/
+    border-radius: 20%;
+    transition: 1s;
+}
+.navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color: rgb(245, 0, 225);
+    transition: 1s;
+}
+
+/* .navbar-collapse.show .dropdown-menu.show .dropdown-item {    can access while click event     
+    padding:15px;
+    margin:5px;
+    padding-left: 20px;
+    border:1px solid grey;
+    border-radius: 10px;
+    background-color: rgb(224, 192, 224) !important;
+} */
+
+
+
+
+.dropdown:hover .dropdown-menu{         /* overrides from click to hover for all dropdown*/
+    display: block;
+    background-color: rgb(211, 210, 200);
+    padding:5px;
+}
+.dropdown:hover .dropdown-menu:hover .dropdown-item:hover{
+    background-color: rgb(201, 187, 30);
+}
+
+.dropdown-btn{
+    position: relative;
+}
+
+.nested-dropdown-menu{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 80%;
+    top: 0px;
+}
+.dropdown-product:hover .dropdown-menu-product{
+    display: block;
+    border-radius: 5%;
+    /* background-color: red; */
+}
+.dropdown-btn:hover .nested-dropdown-menu{
+    display: block;
+}
+.dropdown-menu-product:hover .dropdown-item{
+    display: block;
+    background-color: rgb(181, 181, 180);
+}
+.dropdown-menu-product:hover .dropdown-item:hover{
+    background-color: rgb(151, 162, 162);
+}
+
+
+
+#section3{
+    height: 100vh;
+    padding-top:70px;
+    display: grid;
+    align-items: center;
+    padding-bottom:70px;
+}
+
+#section5{
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:300px;
+    padding-right: 300px;
+    background-color: rgb(255, 248, 238);
+}
+
+.customers-banner{
+    position: relative;
+    border-radius: 15px;
+    padding:10px;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: -25px;
+    font-size: small;
+    background-color: red;
+}
+
+.dow-btn-lbl{
+    width: 700px !important;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+.special-offer{
+    font-family: "Fredericka the Great", serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.download-btn{
+    height: 100%;
+    width:auto;
+}
+
+#rice-home1{
+    z-index: 1;
+    top:150px;
+    left:200px;   
+}
+
+#rice-home2{
+    z-index: 1;
+    top:450px;
+    left:900px;   
+}
+#rice-home3{
+    z-index: 0;
+    top:0px;
+    left:-20px;
+    position: absolute !important;
+}
+
+.product-items-container, .ws-product-items-container{
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;          /* hide scrollbar */
+    gap: 16px;
+    padding: 10px;
+    
+}
+
+.product-items{
+    background-color:black;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+
+
+
+
+/* Product File css */
+
+/* .all-pro-container{
+    padding: 0px 50px;
+} */
+
+.product-card{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.product-card div{
+    width: 250px;
+    position: relative;
+}
+.product-card div:hover .pro-cart-caption{
+    transform:translateY(-10px);
+    transition: transform 2s, opacity 3s,background-color 0s;
+    opacity: 1;
+} 
+.pro-cart-caption{
+    
+    padding: 10px 10px;
+    background-color: rgb(246, 177, 48) !important;
+    position: absolute;
+    text-align: center;
+    opacity:0;
+    top: -40px;
+    /* z-index: 0; */
+    font-family: cursive;
+    color: whitesmoke;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+/*  Gallery File css */
+
+.gallery-img-item{
+    width:270px !important;
+    height: auto;
+    border: 1px solid grey;
+    border-radius:10px;
+}
+
+/* Infrastructure file css */
+.infrast-page {
+    font-family: cursive;
+    font-size: large;
+}
+
+/* Contact file css */
+.contact-page{
+    font-family: cursive;
+    font-size: large;
+}
+/* Career file css */
+.career-page{
+    padding: 0px 75px;
+}
+
+
+/* AboutUs file css */
+#whoWare-brands{
+    border:1px solid black;
+    height: auto;
+    border:2px solid black;
+    border-radius: 15px;
+    transition: 0.7s background-color;
+}
+#whoWare-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+#whoWare-brands:hover{
+    background-color: green;
+}
+
+.logo-num{
+    font-size: 250px;
+    font-weight:900;
+    font-family: 'Times New Roman', Times, serif;
+}
+.branch-img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:250px;
+    height:200px;
+}
+.about-page{
+    background-color: rgb(232, 226, 226);
+    font-family: cursive;
+    font-size: large;
+    font-weight:lighter;
+}
+.fa-briefcase {
+    font-size:30px;
+    color:rgb(76, 76, 78);
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}   
+
+
+
+
+
+/* #animate{
+    position:relative;
+    width:300px;
+    max-width: 100%;
+    height:50%;
+    animation: mymove 6s infinite linear;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+} */
+
+
+
+
+
+/* Contact File Css */
+.contact-item-container{
+    height: auto;
+    /* width: 300px !important; */
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto ; */
+}
+
+#frShadow{
+    border-radius:5px;
+    background-color:rgb(233, 231, 231) !important;
+}
+#frShadow:hover{
+    transition: 1s;
+    box-shadow:0px 0px 40px 3px grey;
+}
+input[value="Submit"]{
+    background-color: blueviolet !important;
+}
+.enq-input[placeholder]{
+    background-color: rgb(187, 223, 114);
+    color:blue;
+    /* font-size: 15px; */
+    font-family: cursive;
+}
+
+
+/* Feedback File css */
+.feedback-container{
+    width:100% !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    /* padding: 50px; */
+    background-color: rgb(255, 240, 216);
+}
+[placeholder ~= "Message"]::placeholder{
+    color: rgb(255, 106, 72);
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+
+
+
+/* Recipes File Css */
+
+.recipe{
+    border: 0.5px solid grey;
+    border-radius: 10px;
+
+}
+.recipe-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto; 
+}
+
+.recipe-container-item a div img{
+    border-radius: 10px;
+}
+.recipe-container-item a{
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:serif;
+}
+.recipe:hover{
+    box-shadow: 5px 5px 30px rgb(84, 74, 74);
+    border-radius: 30px;
+    transition:box-shadow 0.1s, border-radius 1.5s;
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 1s;
+}
+.recipe-btns{
+    gap:0px 15px;    
+}
+.recipe-btns a {
+    color:red !important;
+    background-color: orange;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:serif;
+    cursor: pointer;
+    /* margin-left: 10px; */
+}
+.recipe-show{
+    display: block;
+}
+
+.recipe-hide{
+    display: none;
+}
+.recipe-main-container{
+    padding: 0px 75px;
+    background-color: rgb(242, 188, 141);
+}
+
+/* recipe captions */
+.rec-article{
+    position: absolute;
+    /* left: 20px; */
+    bottom: 0px;
+    z-index: 1;
+    font-size:large;
+    width:100%;
+    padding: 10px 0px;
+    /* display: none; */
+    opacity: 0;;
+    text-align: center;
+    background-color: rgb(240, 34, 123) !important;
+    transition: bottom 1s linear, opacity 2s;
+
+    /* animation: upText 2s; */
+}
+@keyframes upText{
+    /* from{   bottom: 0px; } */
+    /* to{ bottom: 100px;} */
+}
+.recipe:hover .rec-article{
+    background-color: blueviolet !important;
+    color: yellowgreen;
+    bottom: 30px;
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+/* Recipes Y scroll card  */
+#LSbtn ,#RSbtn{
+    border: none;
+    background-color: purple;
+    font-size: 20px;
+}
+
+.custom-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  /* scroll-snap-type: x mandatory; */
+  padding: 20px;
+}
+.recipe-card{
+  min-width: 250px;
+  height: 150px;
+  background: #3498db;
+  /* color: white; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* font-size: 20px; */
+  border-radius: 12px;
+}
+
+/* Recipe Page */
+
+.recipe-page{
+    font-family:serif;
+    font-size: large;
+    padding: 50px 150px !important;
+    background-image: linear-gradient(rgb(229, 140, 140),rgb(73, 73, 110),rgb(86, 127, 86));
+}
+.recipe-img{
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Files Mixed  */
+
+.top-info-section{
+    background-color:slateblue;
+}
+
+.wholesale-product-img{
+    width: 50% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+
+
+/* small devices */
+@media (min-width: 576px){ 
+    .top-info-section{
+        /* font-size:10px; */
+        color:orange;
+        background-color: green;
+    }
+
+    .product-container{
+        padding: 0px 50px !important;
+    }
+    
+}
+
+
+/* medium devices */
+@media (min-width: 768px){
+    .top-info-section{
+        /* font-size:10px; */
+        color: green;
+        background-color: rgb(17, 221, 163);
+    }
+    .product-content{
+        font-size: 20px !important;
+    }
+
+    .feedback-container{
+
+        width: 50% !important;
+    }
+
+}
+
+/* Large devices */
+@media (min-width: 992px){
+    .top-info-section{
+        /* font-size:10px; */
+        color:orangered;
+        background-color: rgb(47, 97, 182);
+    }
+    /* .wholesale-product-img{
+        width: 50%;
+    } */
+    .ws-container{
+    padding: 10px 100px !important;   
+    }
+    .wholesale-product-img{
+        width: 95% !important;
+    }
+
+
+}
+
+
+
+
+
+
+/* Max width */
+/* Large devices */
+@media (max-width: 992px){
+    #household div:first-child{
+        padding-top: 70px;
+    }
+    #household div:last-child{
+        padding-top:10px;
+        padding-bottom: 50px;
+        /* flex-direction: column; */
+    }
+    #section1{
+        padding: 0px 50px;
+    }
+
+    /* #household div:nth-child(){}  -> use select specific child if contains many childs*/   
+    #section3{
+        height: 60vh;
+        padding-top:30px;
+        padding-bottom:50px;
+    }
+
+    #section4{
+        padding: 0px 50px;
+    }
+    #section4 > div > div:nth-child(2){
+        padding-top: 50px;
+    }
+    #section4 > div > div:nth-child(1){
+        padding: 40px 0px;
+        /* padding-bottom: 50px; */
+    }
+    #section4 > div > div:nth-child(1) > h1{
+        text-align: center;
+    }
+    #section5{
+        padding-top:50px;
+        padding-bottom:50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .dropdown-menu-product:hover .nested-dropdown-menu{     /* dropdown bug fixed  */
+        background-color: rgb(225, 190, 190) !important;
+            left:0px;
+            top: 30px;
+            z-index: 1;
+            width: 85%;
+    }
+
+    .navbar-nav .nav-item::after{
+        bottom: 0;
+        left: 0;
+    }
+    .navbar-nav .nav-item:hover::after{
+        width:50%;               /* max-content -> keywords will not support browser while animation */
+    }
+
+    /* .product-content{
+        font-size: 15px;
+    } */
+
+}
+
+/* medium devices */
+@media (max-width: 768px){
+    .set-background{
+        height: 70vh;
+    }
+
+    .top-info-section{
+        flex-direction: column;
+        /* color: green; */
+        /* background-color: red; */
+    }
+    #section3{
+        height: 50vh;
+        padding-top:30px;
+        padding-bottom:50px;
+    }
+    
+    .customers-banner{
+        background-color:blue !important;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: -25px;
+        padding: 5px;
+    }
+    .dow-btn-lbl{
+        width: 500px !important;
+    }
+    
+    .gallery-img-item{
+        width:450px !important;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 576px){
+    /* Common classes */
+    .set-background{
+        height: 50vh;
+    }
+    .img-caption{
+         font-size: 25px !important;
+    }
+
+    /* Home File  */
+    .top-info-section{
+        font-size: 12px;
+    }
+    #household{
+        /* background-color: brown; */
+        font-size:14px;
+        font-weight: bold;
+    }
+    #section4{
+        font-size:14px;
+        font-weight: bold;
+    }
+    #section5{
+        font-size:14px;
+        font-weight: bold;        
+    }
+    .dow-btn-lbl{
+        width: 330px !important;
+        font-size:14px;
+    }
+    .download-btn{
+        font-size: 14px !important;
+
+    }
+    #footer-section{
+        text-align: center;
+        font-size: 14px;
+    }
+    #section6{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .about-caption{
+        font-size: 28px !important;
+    }
+    .learn-more{
+        padding: 5px 5px !important;
+    }
+
+    /* Infrastructure File */
+    /* reduce font-size full pages */
+    .infrast-page, .contact-page,.market-page, .about-page{
+        background-color: rgb(135, 135, 163);
+        font-size: 12px !important;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+    }
+    /* .contact-page{
+        background-color: rgb(135, 135, 163);
+        font-size: 12px !important;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+    } */
+    /* Career file css */
+    .career-page{ 
+        padding: 0px 5px;
+        background-color: rgb(232, 226, 226);
+        font-size: 12px !important;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+    }
+    /* Branch File css */
+    .branch-img{
+        height:140px;
+        width:140px;
+    }
+    .logo-num{
+        font-size: 150px;
+        font-weight:900;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #whoWare-brands{
+        width: 100% !important;
+    }
+    /* recipe file css*/
+    .recipe-btns a {
+        padding: 10px 10px;
+        font-size: 12px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .recipe-container{
+        /* display: grid;
+        gap: 10px; */
+        grid-template-columns: auto ; 
+    }
+    .recipe-main-container{
+        padding: 5px 5px;
+    }
+    /* .all-pro-container{
+        padding: 0px !important;
+    } */
+
+
+
+}

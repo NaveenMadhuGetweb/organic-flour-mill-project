@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../stylesheet/customstyle.css" rel="stylesheet">
+    <script src="../script/myscript.js"></script>
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <title>Market Coverage</title>
+</head>
+<body style="background-image: none;">
+
+<div id="navbar"></div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+});
+
+</script>
+
+
+
+
+<div class="market-page">         
+    <div class="set-background" style="background-image:  linear-gradient( rgba(0, 0, 0, 0.584), rgba(0, 0, 0, 0.4)),   url('../images/images-final/company-Building.jpeg')">
+        <h1 class=img-caption">Market Coverage</h1>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-12 m-auto">
+            <h1 class="text-center upTxtBT upTxtOb" style="color: green; font-family: cursive;">Market Coverage</h1>
+            <img class="w-100 " src="../images/images-final/Market-cover.jpeg">
+            <p class="mt-4 upTxtBT upTxtOb">Our products is covered all of <strong> Tamilnadu, Kerala, and Karnataka</strong> in India.</p>
+            <p class="upTxtBT upTxtOb">We extend our business to various exports markets as well that includes <strong> Gulf, Africa & South East Asia</strong>.</p>
+        </div>
+    </div>
+    <!-- <div class="container-fluid p-2 bg-success d-flex justify-content-between align-items-center">
+        <div>Copyright @ 2015</div>
+        <a>Go to the top ^</a>
+        <p>Powered by Naveen Fullstack Developer Trainee</p>
+    </div> -->
+
+    <div class="container-fluid bg-info p-2">
+        <div class="d-flex align-items-center">
+            <div class="col-12 col-sm-4">Copyright @ 2015</div>
+            <div class="col-12 col-sm-4">Go to the top ^</div>
+            <div class="col-12 col-sm-4">Powered by Naveen Fullstack Developer Trainee</div>
+        </div>
+    </div>
+
+
+</div>    
+</body>
+</html>

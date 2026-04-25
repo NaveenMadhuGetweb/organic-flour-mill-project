@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../stylesheet/customstyle.css" rel="stylesheet">
+    <script src="../script/myscript.js"></script>
+
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <title>Career</title>
+</head>
+<body style="background-image: none;">
+
+    
+<div id="navbar"></div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+});
+
+</script>
+
+
+
+    <div class="set-background" style="background-image:  linear-gradient( rgba(0, 0, 0, 0.584), rgba(0, 0, 0, 0.4)),    url('../images/images-final/company-Building.jpeg')">
+        <h1 class="img-caption">Career</h1>
+    </div>
+
+<div class="container-fluid">
+<div class="career-page">    
+    <div class="row mt-5">
+        <div class="col-12 col-sm-8 ease-in-textLR ease-in-text">
+            <h4 class="pb-2">Opportunities at Organic Flour Mills</h4>
+            <p class="lead">At Century Flour Mills, our team is the pillar of our strength, and we would love for you to be a part of it as well. Take up this rewarding opportunity and begin the CFM chapter of your career!</p>
+            <p>Send your resume to us. Mail To: organicmills@gmail.com / hr@organicflourmills.com</p>
+            <a href="#job-search">
+                <button class="pt-2 pb-2 ps-3 pe-3 btn btn-success" style="border-radius: 0px !important; "> Apply Now <span>logo ↓</span></button>
+            </a>
+        </div>
+        <div class="col-12 col-sm-4 mt-3 mt-sm-0 ease-in-textRL ease-in-text">
+            <img class="w-100" src="../images/images-final/Job-offering.jpeg">
+        </div>
+    </div>
+
+    <div class="row mt-5 upTxtBT upTxtOb">
+        <div class="col-12  col-lg-4">
+            <div class="card h-100 shadow-lg" style="border: none;">
+                <img class="w-100" src="../images/images-final/Shift-manager.jpeg">
+                <div class="p-3">
+                    <ul class="" type="circle">
+                        <h4 class="pb-3">Shift Miller / Asst. Miller</h4>
+                        <li>Minimum 2 year experience</li>
+                        <li>Communication skill (Tamil & English)</li>
+                        <li>Knowledge about flow sheet</li>
+                        <li>Knowledge about machinery maintenance</li>
+                        <li>Ability to handle manpower</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12  col-lg-4 mt-5  mt-lg-0">
+            <div class="card h-100 shadow-lg" style="border: none;">
+                <img class="w-100" src="../images/images-final/Fitter.jpeg">
+                <div class="p-3">
+                    <ul type="circle">
+                        <h4 class="pb-3">ITI Fitter – Experience</h4>
+                        <li>Minimum 2 year experience</li>
+                        <li>Knowledge about fabrication</li>
+                        <li>Knowledge about performing of fitting and assembly operations using hand tools and power tools</li>
+                        <li>Knowledge about routine maintenance, troubleshooting and repair of equipment and machinery</li>
+                        <h4 class="pt-5">ITI Fitter – Fresher</h4>                    
+                        <li>Knowledge about safety protocols</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12  col-lg-4 mt-5  mt-lg-0">
+            <div class="card shadow-lg" style="border: none;">
+                <img class="w-100" src="../images/images-final/Packaging-operator.jpeg">
+                <div class="p-3">
+                    <ul type="circle">
+                        <h4 class="pb-3">Packing Machine Operator For FFS Machine</h4>
+                        <li>2 year experience</li>
+                        <li>Knowledge about operation of</li>
+                        <li>Form-Fill-Seal (FFS) Packing Machines</li>
+                        <li>Knowledge about Set up machine parameters based on product and packaging requirements</li>
+                        <li>Knowledge about proper loading of packaging materials (films, laminates, etc.)</li>
+                        <li>Knowledge about routine machine checks and minor troubleshooting</li>
+                        <li>Knowledge about machine settings to ensure correct weight, sealing and pouch shape</li>
+                        <li>Knowledge about proper labelling, batch coding and packaging as per specification</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="row mt-5">
+    <div class="col-12 col-md-6 ease-in-textLR ease-in-text">
+        <img class="w-100" src="../images/images-final/job-search.jpeg">    
+    </div>
+    <div class="col-12 col-md-6 h-auto mt-3 mt-md-0 ease-in-textRL ease-in-text" style="background-color: aliceblue;" id="job-search">
+        <div>
+            <form>
+                <div class="form-header">
+                    <h3 >Application Form</h3>
+                </div>
+                <div class="form-group">
+                    <label class="">Name *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="">Email *</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="">Phone *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label class="">Resume *</label>
+                    <input type="file" class="form-control" style="border: none;">
+                </div>
+                <div class="form-group mt-4">
+                    <label class="">Share Your Words...</label>
+                    <textarea rows="4"  class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <!-- <label class="">Name *</label> -->
+                    <input type="button" value="SEND MESSAGE" class="pt-2 pb-2 ps-5 pe-5 mt-4 btn btn-primary" style="border-radius: 0px !important;">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="container mt-5 upTxtBT upTxtOb">
+        <form>
+            <h2 class="text-danger fs-2">Current Openings</h2>
+            <div class="d-flex justify-content-center align-items-center h-100" style="background-color: gainsboro;">
+                <div class="text-danger text-center p-2 p-md-4 fs-5 fs-md-3 fw-semibold">
+                    No Records Found
+                </div>
+            </div>
+            <p class=""><strong>Don't see a position that's relevant to you? You can still speak to us and tell us where you'd like to fit in. Just upload ur profile & we'll get in touch.</strong></p>
+            <button class="btn btn-danger pe-5 ps-5 disabled">Submit Your Application</button><span>* Upload Resume</span>
+        </form>
+    </div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+</div>    
+
+
+
+</body>

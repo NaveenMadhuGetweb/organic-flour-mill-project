@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../stylesheet/customstyle.css" rel="stylesheet">
+    <!-- bootstrap stylesheet -->
+    <script src="../script/myscript.js"></script>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <title>Organic Flour Mills</title>
+</head>
+</body>
+
+<div id="navbar"></div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./recipeNavbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+});
+
+</script>
+<!-- <a href="../products/productNavbar.html"></a> -->
+
+
+    <div class="container-fluid recipe-page">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1 class="fw-bold">INGREDIENTS</h1>
+                <ul type="square">
+                    <li>3 cup OFM Refined Wheat Flour (Maida)</li>
+                    <li>1 tbsp sugar</li>
+                    <li>1 tsp salt</li>
+                    <li>2 tbsp ghee / clarified butter</li>
+                    <li>water (for kneading)</li>
+                    <li>oil (for soaking & roasting)</li>
+                </ul>
+                <h1 class="fw-bold">INSTRUCTIONS</h1>
+                <ul type="square">
+                    <li>Firstly, in a large mixing bowl take 3 cup Century Refined Wheat Flour (Maida), 1 tbsp sugar, 1 tsp salt and 2 tbsp ghee.</li>
+                    <li>Rumble and mix well until the flour turns moist.</li>
+                    <li>Now add water and start to knead the dough.</li>
+                    <li>Now add water and start to knead the dough.</li>
+                    <li>Add water slowly and knead to a smooth and soft dough.</li>
+                    <li>Further add 2 tbsp oil, cover and rest for 1 hour.</li>
+                    <li>After 1 hour, punch and knead the dough again.</li>
+                    <li>Knead until the dough absorbs all the oil.</li>
+                    <li>Now pinch a ball sized dough and place in a bowl.</li>
+                    <li>Add ½ cup oil, cover and soak for 1 hour.</li>
+                    <li>Now take the ball and roll gently.</li>
+                    <li>Pull and spread as thinly as possible.</li>
+                    <li>Cut into thin strips using a sharp knife.</li>
+                    <li>Bring together the stips and pull slightly.</li>
+                    <li>Now roll spiral, making sure all the strips are intact.</li>
+                    <li>With greased hand, pat and spread the dough.</li>
+                    <li>Roll slightly thick, making sure the layers are intact..</li>
+                    <li>Now place the rolled parotta onto hot tawa.</li>
+                    <li>Make sure to grease the tawa well.</li>
+                    <li>Cook on medium flame until the base is cooked.</li>
+                    <li>Flip over and spread ½ tsp oil.</li>
+                    <li>Cook on medium flame until both sides turn golden brown.</li>
+                    <li>Crush the parotta gently, this helps to separate the layers.</li>
+                    <li>Finally, enjoy Malabar parrota with chana curry.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 ">
+                <img class="w-100 recipe-img" src="../../images/images-final/recipes/chocolate-mug-cake.jpeg">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

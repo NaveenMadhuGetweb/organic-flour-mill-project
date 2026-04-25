@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../stylesheet/customstyle.css" rel="stylesheet">
+    <script src="../script/myscript.js"></script>
+    <script src="../script/langTranslation.js"></script>
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-image: none; background-color: rgb(230, 227, 227);">
+
+
+
+<div id="navbar"></div>
+<script>
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("navbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+});
+
+</script>
+
+
+
+
+
+
+<div class="infrast-page">
+    <div class="container-fluid set-background" style="background-image:  linear-gradient( rgba(0, 0, 0, 0.584), rgba(0, 0, 0, 0.4)),  url('../images/images-final/company-Building.jpeg')">
+        <h1 class="img-caption" id="icap">Infrastructure</h1>
+    </div>
+
+
+<select name="languages" id="lang" style="background-color:thistle; padding: 10px; display: flex; position: absolute; right: 0; ">
+    <option value="#">Please Select Language</option>    
+    <option value="en">English</option>
+    <option value="ta">Tamil</option>
+</select>
+
+
+    <div class="container">
+        <h1 class="mt-4 mb-4 text-center" id="mac">Machineries</h1>
+        <div class="row">
+            <img class="col-12 col-lg-6 ease-in-textLR ease-in-text" src="../images/images-final/Machineries.jpeg">
+            <img class="col-12 col-lg-6 ease-in-textRL ease-in-text" src="../images/images-final/Machineries.jpeg">
+        </div>
+        <div class="upTxtBT upTxtOb">
+            <p class="mt-3" id="mac-par">We have installed imported machineries in both the mills which possess the state of the art technology to cater to the needs of the customers in Tamilnadu. Machineries are imported from.. Bhuler, Swiss</p>
+            <h1 class="mt-4 mb-4" id="meq">Milling Equipments Installed</h1>
+            <p class="mt-3" id="meqa">We have installed the following machines for cleaning of wheat before milling. The wheat is conveyed to the cleaning machines from the bottom floor to the floors on top through elevators..</p>
+            <p class="mt-3" id="meqb">Magnetic separator: <br> The wheat is passed through a hopper. On this hopper is a corrugated feed roll which feeds the wheat out of the hopper in a thin stream and runs down over the face plates of the magnet.</p>
+            <p class="mt-3" id="meqc">The Aspirator:This machine is designed to remove light materials such as light shriveled grains of wheat</p>
+            <p class="mt-3" id="meqd">Separator: <br>This machine consists of revolving cylinders covered with perforated metal.. Any material that is too large to pass through the openings is scalped off.</p>
+        </div>   
+        <div class="upTxtBT upTxtOb">
+            <p class="mt-3" id="meqe"><strong>The Scourer:</strong><br>The scouring of wheat is for the removal of supferflous brewing of and wheat hairs.This material is removed by rubbing action of wheat against wheat .</p>
+            <p class="mt-3" id="meqf"><strong>Wheat Washers:</strong><br>They consist of a cylinder having a blank wetting section and a perforated whizzer section. A spiral bladed agitator runs the full length of the cylinder.Then water is applied to the wheat as it enters the machine and at a number of places in the cylinder.</p>
+            <p class="mt-3" id="meqg">Roll Mill(Chinese Machine and Bhuler Swiss): <br> This machine houses 2 pairs of rolls. In each pair of rolls, one is adjustable allowing the rolls to be drawn closer or forced farther apart.The rolls are made of chill-hardened cast iron.The rolls are used to break open the wheat kernels.The rolls are corrugated on their surface so that as the rolls in a pair turn towards each other ,they unroll the bran coats on the kernel instead of crushing them.</p>
+            <p class="mt-3" id="meqh">Purifier: <br> Purification is merely a separation of bran particles from the endosperm .The machine consists of roll feeders leading to suspended sieve. Air enters the machine below the sieve .The reciprocal motion of the inclined sieve moves the stock towards the tail end allowing the air to pass through it.Then the stocks are hoppered down.</p>
+            <p class="mt-3" id="meqi">Sifters: <br> Sifters travel in a gyratory manner,making a perfect circle of 2 to 4 inches in diameter. As the stock enters the sifters it falls upon a sieve, the heavier particles work to the bottom of the mass and pass through the openings.While the lighter particles are discharged over the tail end send back to rolls.</p>
+            <p class="mt-3" id="meqj">Agromatic AG system: <br> Which is a wheat dampening control system. This equipment was imported from Switzerland. This maintains the accurate moisture in the finished products.</p>
+            <p class="mt-3" id="meqk">Bin for storing wheat with a capacity of 1600 MT in SMAFPL & SMRFMPL</p>
+        </div>
+        <div class="upTxtBT upTxtOb">    
+            <p class="mt-3" id="meql">Godown Capacity</p>
+            <p class="mt-3" id="meqm">There are 11500 MTS capacity of Godowns in two Companies. SMAFPL got about 7000 MTS and SMRFMPL got about 4500 MTS of storage Godown respectively</p>
+            <p class="mt-3" id="meqn">Volumetric Feeder Control system controlled by A/C drivers for blending wheat from various hoppers.</p>
+            <p class="mt-3" id="meqo">Sooji Dryer system which gives a longer shelf life.</p>
+            <p class="mt-3" id="meqp">Realizing the need for further upgradation the First mill was further revamped now and then with latest state of art equipments like Destoner , Purifier, Rollers, Bins etc. which are imported to produce better quality of products.</p>
+        </div>
+        <h1 class="mt-4 mb-4 text-center" id="lbr">Liboratory</h1>
+        <div class="row">
+            <img class="col-12 col-lg-6 ease-in-textLR ease-in-text" src="../images/images-final/liboratory.jpeg">
+            <img class="col-12 col-lg-6 ease-in-textRL ease-in-text" src="../images/images-final/liboratory.jpeg">
+        </div>
+        <p class="mt-3 upTxtBT upTxtOb" id="lbr-pr">The mills are equipped with a full fledged laboratory with high quality laboratory Equipments like Alvograh, Labmill, Moisture Bell, SRC and Gluten washer. The quality is tested every hour to ensure that the products are of high standards before it leaves the Companys’ premises.</p>
+                
+
+
+<!-- <script>
+    const langSetUp = document.querySelector("select");
+    var h1 = document.getElementById("tagg"); 
+
+    langSetUp.addEventListener("change", (event) => {
+        setLanguage(event.target.value)
+    })
+
+    const setLanguage = (language) => {
+        console.log("inside change" , h1);
+        if(language == "ta"){
+            h1.innerHTML= "hi"; 
+            // document.getElementById("tagg").innerHTML = "hi";                                //h1.innerHTML = "hi";        // translation.ta.h1
+        }
+    }
+
+    const translation = {
+        ta: {
+            h1 : "hello",
+            p : "he"
+        }
+    }
+
+</script> -->
+
+        <h1 id="" class="mt-4 mb-4 text-center" id="tran">Transport</h1>
+        <img class="col-12" src="../images/images-final/transport.jpeg">
+        <p class="mt-3 upTxtBT upTxtOb" id="tran-pr">For movement of wheat from Railhead to mills and for delivery of wheat flour, the Company owns a fleet of 15 numbers of Lorries and Vans.</p>
+
+        <h1 class="mt-4 mb-4 text-center" id="gen">Genset</h1>
+        <img class="col-12" src="../images/images-final/generator.jpeg">
+        <p class="mt-3"><h1 class="mt-4 mb-4 text-center" id="elec1">Electricity</h1>
+        <img class="col-12" src="../images/images-final/air-electricity.jpg">
+        <p class="mt-3 upTxtBT upTxtOb" id="elec1-pr">We have an uninterrupted power supply in both SMRFM & SMAF with the installation of three generators having capacity of 500KVA,380 KVA and 200KVA in SMRFMPL and two generators with a capacity of 500KVA,380 KVA in SMAFPL respectively</p>
+
+        <h1 class="mt-4 mb-4 text-center" id="elec2">Electricity</h1>
+        <img class="col-12" src="../images/images-final/electricity.jpg">
+        <p class="mt-3 upTxtBT upTxtOb" id="elec2-pr">We have a connected load of 650 KVA in SMRFMPL consuming 250000 units per month and A connected load of 600 KVA in SMAFPL consuming 320000 unit per month.</p>
+
+        <h1 class="mt-4 mb-4 text-center" id="solar">Wind & Solar Power Division</h1>
+        <img class="col-12" src="../images/images-final/solar.jpg">
+        <p class="mt-3 upTxtBT upTxtOb" id="solar-pr">The group has 31 Wind Electric Generators of 10MW installed capacity near yyyyz area of Banglore district. The WEGs helps in generating power and is set off in the EB bill against the power consumed by our mills. The Surplus power generated are sold to other Industries through EB Network Group also entered into power generation through Solar power plant. About 20 MW Solar power plants is erected in Kangeyam & Dindigul area in Tamil Nadu. The Power generated are sold to different Industries through TNEB Network The total turnover of wind & solar comprises of 25 crores Per Year.</p>
+
+        <h1 class="mt-4 mb-4 text-center" id="wrk">Workshop</h1>
+        <p class="mt-3 upTxtBT upTxtOb" id="wrk-pr">There is a full fledged workshop and adequate trained personnel are available to maintain the equipments on a regular basis.</p>
+
+    </div>
+</div>
+</body>
+</html>
+
+
+    <!-- <div id="part1">
+        hiii
+    </div> -->
+

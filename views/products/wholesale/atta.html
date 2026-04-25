@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- below for Favicon website tab icon -->
+    <link rel="icon" type="image/x-icon" href="./images/portfolio-6.jpg">
+
+    <!-- fontawesom icons stylesheet and script -->
+    <script src="https://kit.fontawesome.com" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Organic Flour Mills</title>
+    <!-- custom stylesheet and script -->
+    <link href="../../../stylesheet/customstyle.css" rel="stylesheet">
+    <script src="script/myscript.js"></script>
+
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="navbar"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./wholesaleNavbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+});
+</script>
+<!-- <a href="./wholesaleNavbar.html"></a> -->
+
+
+
+    <div class="container-fluid ws-container text-center">
+        <div>
+            <h1>ORM Atta</h1>
+            <h4>Available: 50kg, 30kg & 10kg</h4>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4  p-lg-4 ws-product-container">
+                <img class="h-auto wholesale-product-img" src="../../../images/images-final/atta-50kg.jpeg">
+                <p>50kg</p> 
+            </div>
+            <div class="col-12 col-lg-4  p-lg-4 ws-product-container">
+                <img class="h-auto wholesale-product-img" src="../../../images/images-final/atta-30kg.jpeg">
+                <p>30kg</p> 
+            </div>
+            <div class="col-12 col-lg-4  p-lg-4 ws-product-container">
+                <img class="h-auto wholesale-product-img" src="../../../images/images-final/atta-10kg.jpeg">
+                <p>10kg</p> 
+            </div>
+        </div>
+    </div>  
+</body>
+
+

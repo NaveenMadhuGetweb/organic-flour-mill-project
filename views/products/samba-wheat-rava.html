@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- below for Favicon website tab icon -->
+    <link rel="icon" type="image/x-icon" href="./images/portfolio-6.jpg">
+
+    <!-- fontawesom icons stylesheet and script -->
+    <script src="https://kit.fontawesome.com" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Organic Flour Mills</title>
+    <!-- custom stylesheet and script -->
+    <link href="../../stylesheet/customstyle.css" rel="stylesheet">
+    <script src="script/myscript.js"></script>
+
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="navbar"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./productNavbar.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+});
+</script>
+
+
+    <div class="container-fluid product-container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <img class="w-100 h-auto d-block" src="../../images/images-final/samba-wheat-rava.png">
+            </div>
+            <div class="col-12 col-lg-6">
+                <div>
+                    <h1>ORM Samba Wheat Rava</h1>
+                    <h4>Available: 500kg & 1kg</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5 pt-5">
+            <div class="product-content">
+                <h1>OFM Samba Wheat Rava</h1>
+                <p>Whole wheat is ground and then granulated to create samba rava. It is a nutritious alternative to regular rava. Many foods items, including rava dosa, rava idly, rava upma, and sweets like rava kesari, may be made using samba rava. With some sliced veggies to enhance the flavour, dishes cooked with rava provide a nutritious breakfast.</p>
+        </div>
+    </div>    
+</body>

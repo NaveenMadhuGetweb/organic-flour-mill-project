@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- below for Favicon website tab icon -->
+    <link rel="icon" type="image/x-icon" href="./images/portfolio-6.jpg">
+
+    <!-- fontawesom icons stylesheet and script -->
+    <!-- <script src="https://kit.fontawesome.com" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Organic Flour Mills</title>
+    <!-- custom stylesheet and script -->
+    <link href="./stylesheet/customstyle.css" rel="stylesheet">
+    <script src="script/myscript.js"></script>
+
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- js CDN(popper) for dropdowns, popovers,tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- top info label        for understanding try by=> mt-sm-1 mt-md-3 mt-lg-5  -->     
+    <div class="container-fluid  d-flex justify-content-between top-info-section">     <!-- mt-sm-1 mt-md-3 mt-lg-5 For testing purpose --> 
+        <div class="p-1">
+            <span class="ps-2"><i class="fa-regular fa-envelope"></i></span>
+            <span class="ps-2 fw-bold">Email Us :</span>
+            <span class="ps-2">Admin@gmail.com</span>
+        </div>
+        <div class="p-1">
+            <span class="p-1"><i class="fa-solid fa-phone"></i></span>
+            <label class="p-1 fw-bold"><strong>call:</strong><span class="p-1 pe-lg-5 pe-md-5 pe-sm-1">+ 8870480781 </span></label>
+            <span class="p-1"><i class="fa-brands fa-instagram"></i></span>
+            <span class="p-1"><i class="fa-brands fa-facebook-messenger"></i></span>
+            <span class="p-1"><i class="fa-brands fa-square-x-twitter"></i></span>
+            <span class="p-1"><i class="fa-brands fa-linkedin"></i></span>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- navbar part -->
+    <nav class="navbar navbar-dark navbar-expand-lg p-0 m-0 h-auto">
+        <div class="container-fluid" style="background-color:#232f3e; z-index: 1; box-shadow: 0px 25px 10px rgb(237, 237, 237);">           <!-- why not working => style="box-shadow: 0px 25px 10px red;" -->
+            
+            <a class="navbar-brand">
+                <img src="./images/final/logo.png" height="100" width="100">
+            </a>            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcollapseId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcollapseId" style="font-family: cursive; font-size: 20px; font-weight: 500;">   <!-- ".show" class will add from bootstrap js -> "navbar-collapse show" -->
+                <ul class="navbar-nav ms-auto" >
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./index.html">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#section1">Households</a></li>
+                            <li><a class="dropdown-item" href="#community">Our Community</a></li>
+                            <li><a class="dropdown-item" href="#our-values">Our Values</a></li>
+                            <li><a class="dropdown-item" href="#dealer">Dealer Form</a></li>
+                            <li><a class="dropdown-item" href="#offers">Today Offers</a></li>
+                        </ul>                    
+                    </li>
+
+                    <li class="nav-item dropdown dropdown-product">
+                        <a class="nav-link dropdown-toggle" href="./views/product.html">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-product">
+                            <li> <a class="dropdown-item" href="./views/product.html">Products</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown dropdown-btn">
+                                <a class="dropdown-item dropdown-toggle" href="#">Retail Products</a>
+                                <ul class="nested-dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/products/refinded-wheat-flour.html">Refined Wheat Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/wheat-flour.html">Wheat Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/roasted-sooji.html">Roasted Sooji</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/whole-wheat-flour.html">Whole Wheat Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/samba-wheat-rava.html">Samba Wheat Rave</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/roasted-semia.html">Roasted Semia</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/ragi-semia.html">Ragi Semia</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/rice-flour.html">Rice Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/ragi-flour.html">Ragi Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/kozh-idiy-flour.html">Kozhukattai / Idiyappam Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/gram-flour.html">Gram Flour</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/bajji-bonda-powder.html">Bajji Bonda Powder</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/asafoetida-powder.html">Asafoetida Powder</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/asafoetida-powder-cake.html">Asafoetida Cake</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li class="dropdown-btn">
+                                <a class="dropdown-item" href="#">Wholesale Products</a>
+                                <ul class="nested-dropdown-menu">
+                                    <li><a class="dropdown-item" href="./views/products/wholesale/maida.html">Maida</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/wholesale/atta.html">Atta</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/wholesale/sooji.html">Sooji</a></li>
+                                    <li><a class="dropdown-item" href="./views/products/wholesale/bran.html">Bran</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="./views/gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../frontend website/views/infrastructure.html">Infrastructure</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./views/contact.html">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="./views/aboutus.html">About Us</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="./views/career.html">Career</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link">Retail</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link" href="./views/market.html">Market Coverage</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="./views/feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./views/recipes.html">Recipes</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link">Customer Center</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link">English / Tamil -->
+                     
+                    <li class="nav-item dropdown dropstart">
+                        <a class="nav-link dropdown-toggle" >More</a>
+                        <ul class="dropdown-menu" style="position: absolute; left: -80px;">
+                            <li><a class="dropdown-item" href="./views/market.html">Market Coverage</a></li>
+                            <li><a class="dropdown-item" href="./views/about.html">About</a></li>
+                        </ul>                     
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+<!-- top carousel part -->
+
+<div id="carouselExampleDark" id="caro" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div> -->
+    
+    <img class="bg-warning rice-animate" src="./images/wheatImage.png" height="150" width="150" id="rice-home1">
+    <img class="bg-warning rice-animate" src="./images/wheatImage.png" height="150" width="150" id="rice-home2">
+
+    <div class="carousel-inner">
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/images-final/company-product-banner.png" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div> -->
+        </div>
+        <div class="carousel-item active" data-bs-interval="2000">
+            <img src="images/images-final/company-Building.jpeg" class="d-block w-100" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div> -->
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/pexels-shotbyrain-3010251.jpg" class="d-block w-100 h-50" alt="...">
+            <!-- <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+          </div> -->
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>    
+
+    
+<!-- house hold name section part -->
+    <div class="container-fluid p-lg-5 style-custom" id="section1">
+        <div class="row align-items-center" id="household">
+            <div class="col-12 col-lg-6 ease-in-textLR ease-in-text">
+                    <h1>A Household Name</h1>
+                    <p>orgo-flour groups needs no introduction in south India. A household name for over 55 years in Kerala and Tamil Nadu, Kuthuvilakku manufactures high-quality food products, including whole-wheat atta, maida & sooji.</p>
+                    <p>Our products form a key ingredient in the daily diet of our consumers, and we are a trusted brand for home-makers and commercial establishments alike. All our products are available in convenient packaging sizes. For commercial users like bakeries and parotta stalls, the packaging size ensures consistent quality. Our range of whole-wheat products for home consumers are available in smaller packs, ensuring convenience.</p>
+                    <p>Our valuable relationships with our distributors has allowed Kuthuvilakku to earn significant market share in the two key markets of Kerala and Tamil Nadu, where we are market leaders.</p>
+                    <p>As a brand, we are now focused on national growth, developing retail channels across the country.</p>
+            </div>
+            <div class="col-12 col-lg-6 ease-in-textRL ease-in-text">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/images-final/owner-manager.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/images-final/owners-managers-1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/images-final/owners-managers-2.jpeg" class="d-block w-100 h-auto" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>  
+        </div>      
+    </div>
+
+
+
+<div class="container-fluid">
+    <div id="section3" class="text-white text-center">
+        <div class="row">
+            <div>
+                <h1 style="font-weight: bold;">Our Brand Vision</h1>
+                <p style="font-size: large; font-weight: bold;">Try to scroll this section and look at the navigation bar while scrolling! </p>
+                <p style="font-size: 20px; font-weight: bold; font-style: italic;">Try to scroll this section and look at the navigation bar while scrolling! </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- Ingrained Quality section part -->
+
+<div class="container-fluid p-lg-5 style-custom" id="section4">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-6 order-2 ease-in-textRL ease-in-text">
+            <h1>Ingrained Quality</h1>
+            <p>orgo-flour groups needs no introduction in south India. A household name for over 55 years in Kerala and Tamil Nadu, Kuthuvilakku manufactures high-quality food products, including whole-wheat atta, maida & sooji.</p>
+            <p>Our products form a key ingredient in the daily diet of our consumers, and we are a trusted brand for home-makers and commercial establishments alike. All our products are available in convenient packaging sizes. For commercial users like bakeries and parotta stalls, the packaging size ensures consistent quality. Our range of whole-wheat products for home consumers are available in smaller packs, ensuring convenience.</p>
+            <p>Our valuable relationships with our distributors has allowed Kuthuvilakku to earn significant market share in the two key markets of Kerala and Tamil Nadu, where we are market leaders.</p>
+        </div>
+        <div class="col-12 col-lg-6 order-1 ease-in-textLR ease-in-text" style="position: relative;">
+                        <!-- rice logo animate  -->
+                        <img class="bg-warning rice-animate" src="./images/wheat-plant.png" height="150" width="150" id="rice-home3">
+            <div style="z-index:1;" id="carouselQualityControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/images-final/liboratory.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/images-final/liboratory.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/images-final/liboratory.jpeg" class="d-block w-100 h-auto" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselQualityControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselQualityControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+<div class="container-fluid  style-custom">
+    <div id="community" class="text-center upTxtBT upTxtOb">
+        <h1>Our Community</h1>
+        <p class="mt-4">Orgoflour is a brand everyone trusts. We have built this trust over years of dedicated service to our community.</p>
+        <p class="mt-4"> At Orgoflour we foster a strong culture of ownership augmented with a service-oriented mindset. Every employee is a stake-holder and we strive to bring out the best in our people.</p>
+        <p class="mt-4">Our relationships with our distribution network goes back several decades, and we’ve always fostered a culture of transparency. We depend on our people and they depend on us, and we stand united in delivering assurance to our customers. Organic Flours’s distributors will always be assured of a consistent supply of product throughout the year, regardless of market and weather conditions. It is this reliability and dependability which has created enduring bonds in the hearts and minds of our community across south India. Our endeavour is to replicate the same model of mutual respect in business, as we seek to expand our wholesale and retail footprint across India.</p>
+    </div>
+
+        <div class="row upTxtBT upTxtOb">
+            <img class="col-12 col-sm-4 customers" src="images/images-final/owner-manager.jpeg">
+            <img class="col-12 col-sm-4 customers" src="images/images-final/owners-managers-1.jpeg">
+            <img class="col-12 col-sm-4 customers" src="images/images-final/owners-managers-2.jpeg">
+        </div>
+        <div class="text-center text-light customers-banner">We are the first choice for top domestic brands (Britannia, Parle & ITC), large international chains (Domino's Pizza & McDonald's), and for many small & medium sized local businesses that have</div>
+
+</div>
+
+
+
+<div class="container-fluid bg-light" id="section6" style="padding-top:40px; padding-bottom:50px; background-color:lightpink !important;">
+    <div class="container pt-5 pb-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 ease-in-textLR ease-in-text">
+                <h2 style="font-family: cursive;">About Company</h2>
+                <h1 class="mt-3 about-caption" style="font-weight: bold; font-size: 45px; font-family:sans-serif;">Organic Flour Groups</h1>
+                <p class="mt-4" style="font-family:cursive;">Organic Flour Group is pioneer in the field of Wheat products manufacturing. The group is consistently at the forefront in quality wheat products manufacturing. Over a period of time the group has gained customer's reputation across Tamil Nadu and its neighbouring states by their high quality products. This Group's every single activity ensures Quality, Healthy and Tasty products to customers.</p>
+                <button class="px-3 py-2 px-sm-5 py-sm-3 mt-4 fw-bold btn btn-success learn-more">Learn More >></button>
+            </div>
+            <div class="col-12 col-lg-6 ease-in-textRL ease-in-text">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img class="w-100" src="images/images-final/liboratory.jpeg">
+                    </div>
+                    <div class="col-12 col-md-6 d-grid gap-5">
+                        <img class="w-100" src="images/images-final/meeting-hall.jpeg">
+                        <img class="w-100" src="images/images-final/Machineries.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container-fluid" style="background-color: blanchedalmond;">
+    <h1 class="text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Retail Product</h1>
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <button id="LArrow"><span><i class="fa-solid fa-hand" style="font-size: 50px; color: sandybrown;"></i></span></button>
+            <div class="product-items-container">
+                <img class="product-items"  src="./images/images-final/wheat-flour.png">
+                <img class="product-items"  src="./images/images-final/roasted-sooji.png">
+                <img class="product-items"  src="./images/images-final/whole-wheat-flour.png">
+                <img class="product-items"  src="./images/images-final/samba-wheat-rava.png">
+                <img class="product-items"  src="./images/images-final/roasted-semia.png">
+                <img class="product-items"  src="./images/images-final/ragi-flour.png">
+                <img class="product-items"  src="./images/images-final/rice-flour.png">
+                <img class="product-items"  src="./images/images-final/kozhukattai-idiyappam-flour.png">
+                <img class="product-items"  src="./images/images-final/gram-flour.jpeg">
+                <img class="product-items"  src="./images/images-final/bajji-bonda-powder.jpeg">
+                <img class="product-items"  src="./images/images-final/asafoetida-cake.jpeg">
+                <img class="product-items"  src="./images/images-final/asafoetida-powder.jpeg">
+            </div>
+            <button id="RArrow"><span><i class="fa-solid fa-hand" style="font-size: 50px; color: sandybrown;"></i></span></button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid" style="background-color: blanchedalmond;">
+    <h1 class="text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Wholesale Product</h1>
+    <div class="container">
+        <div class="d-flex align-items-center">
+            <button id="WSLArrow"><span><i class="fa-solid fa-hand" style="font-size: 50px; color: sandybrown;"></i></span></button>
+            <div class="ws-product-items-container">
+                <img class="product-items"  src="./images/images-final/atta-10kg.jpeg">
+                <img class="product-items"  src="./images/images-final/atta-30kg.jpeg">
+                <img class="product-items"  src="./images/images-final/atta-50kg.jpeg">
+                <img class="product-items"  src="./images/images-final/sooji-10kg.jpeg">
+                <img class="product-items"  src="./images/images-final/sooji-30kg.jpeg">
+                <img class="product-items"  src="./images/images-final/sooji-50kg.jpeg">
+                <img class="product-items"  src="./images/images-final/maida-10kg.jpeg">
+                <img class="product-items"  src="./images/images-final/maida-30kg.jpeg">
+                <img class="product-items"  src="./images/images-final/maida-50kg.jpeg">
+                <img class="product-items"  src="./images/images-final/refined-wheat-flour.png">            </div>
+            <button id="WSRArrow"><span><i class="fa-solid fa-hand" style="font-size: 50px; color: sandybrown;"></i></span></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="our-values" class="container-fluid text-center bg-danger" style="width: 100%; height:auto; padding-top:70px;padding-bottom:70px">
+  <h1>Our Values</h1>  
+    <div class="container">
+        <!-- <div class=" d-flex gap-2 p-5 justify-content-center align-items-center"> -->
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 p-2 upTxtBT upTxtOb">
+                    <img class="mb-5" src="images/portfolio-4.jpg" height="100" width="100" style="border-radius: 50%;">
+                    <h4>Quality</h4>
+                    <p class="mt-4">Source the best ingredients, use the best machinery and employ the best people to ensure customers always get the best quality. With an unwavering focus and a culture of excellence, Kuthuvilakku will endure as a brand that customers trust.</p>
+                </div>
+                
+                <!-- <div id="vBar"><hr style="transform: rotate(90deg); height: 50px !important;"></div> -->
+
+                <div class="col-12 col-sm-6 col-lg-3 p-2 upTxtBT upTxtOb">
+                    <img class="mb-5" src="images/portfolio-4.jpg" height="100" width="100" style="border-radius: 50%;">
+                    <h4>Quality</h4>
+                    <p class="mt-4">Source the best ingredients, use the best machinery and employ the best people to ensure customers always get the best quality. With an unwavering focus and a culture of excellence, Kuthuvilakku will endure as a brand that customers trust.</p>
+                </div>
+
+                <!-- <div id="vBar">l</div> -->
+
+                <div class="col-12 col-sm-6 col-lg-3 p-2 upTxtBT upTxtOb">
+                    <img class="mb-5" src="images/portfolio-4.jpg" height="100" width="100" style="border-radius: 50%;">
+                    <h4>Quality</h4>
+                    <p class="mt-4">Source the best ingredients, use the best machinery and employ the best people to ensure customers always get the best quality. With an unwavering focus and a culture of excellence, Kuthuvilakku will endure as a brand that customers trust.</p>            
+                </div>
+
+                <!-- <div id="vBar">l</div> -->
+                
+                <div class="col-12 col-sm-6 col-lg-3 p-2 upTxtBT upTxtOb">
+                    <img class="mb-5" src="images/portfolio-4.jpg" height="100" width="100" style="border-radius: 50%;">
+                    <h4>Quality</h4>
+                    <p class="mt-4">Source the best ingredients, use the best machinery and employ the best people to ensure customers always get the best quality. With an unwavering focus and a culture of excellence, Kuthuvilakku will endure as a brand that customers trust.</p>
+                </div>
+            </div>    
+        <!-- </div> -->
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" id="dealer" style="padding: 100px 0px;">
+    <h1 class="text-center text-light mb-5">Downloadable Information</h1>
+    <div class="row justify-content-center">
+        <div>
+            <div class="dow-btn-lbl mx-auto">
+                <span class="ps-5">New Dealer Appointment Form</span>
+                <a href="./images/final/logo.png" download><button class="btn btn-warning download-btn"><span>Icon</span>Download (<sub>3</sub>6kb)</button> </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid m-0 p-0" id="offers" style="background-color: salmon;">
+    <marquee class=" d-flex align-items-center" direction="left" height="45px" width="100%">
+        <span class="special-offer">This Month Offer : Special Gifts will available if order now!!!</span>    
+    </marquee>    
+</div>
+
+
+<!-- Footer -->
+<div id="footer-section mt-0" class="container-fluid" style="padding-top:70px;padding-bottom:70px; background-color:lightblue; font-family: cursive;">
+    <div class="container">
+            <!-- <div class="d-flex justify-content-between"> -->
+                <!-- <h1>Quick Links</h1> -->
+                <!-- <h1>Contact Us</h1> -->
+            <!-- </div>         -->
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <h1>Quick Links</h1>
+                <p>About Us</p>
+                <p>Careers</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <!-- <h1>Contact Us</h1> -->
+                <p>Products</p>
+                <p>CSK Policy</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                 <div><img src="./images/final/logo.png" alt="logo-img" width="200" height="200"></div>
+                <p>Customer satisfaction, quality, nutrition & taste</p>
+                <p>
+                    <span class="p-1"><i class="fa-brands fa-facebook-messenger"></i></span>
+                    <span class="p-1"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="p-1"><i class="fa-brands fa-square-x-twitter"></i></span>
+                    <span class="p-1"><i class="fa-brands fa-linkedin"></i></span>
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                <h1>Contact Us</h1>
+                <p>Organic Flour Groups,</p>
+                <p>Organic Flour Groups,</p>
+                <p>Organic Flour Groups,</p>
+                <p>Organic Flour Groups,</p>
+                <address><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>5/55, Palayam,<br>Chennai Main Road,<br>Banglore -121 121.<br>Banglore Dist.</address>
+                <p><span><i class="fa-regular fa-envelope"></i></span>Orgoflour@gmail.com</p>
+                <p><span><i class="fa-solid fa-phone"></i></span>12345 12345, <br>+91 5555 5555, <br>+91 67676 67676</p>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+</div>
+
+
+
+
+
+<!-- 
+<div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div> -->
+
+
+
+
+</body>
+</html>
