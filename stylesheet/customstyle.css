@@ -54,6 +54,8 @@ html {
 }
 
 .rice-animate{
+    width: 150px;
+    height: 150px;
     position: absolute;
     animation: position 10s infinite ease-in-out;
 }
@@ -311,7 +313,7 @@ body{
 #rice-home2{
     z-index: 1;
     top:450px;
-    left:900px;   
+    right:100px;   
 }
 #rice-home3{
     z-index: 0;
@@ -938,6 +940,25 @@ input[value="Submit"]{
         padding: 0px !important;
     } */
 
+    .recipe-page{
+        font-size: small;
+        padding: 50px 5px !important;
+    }
 
+    .rice-animate{
+        width: 50px;
+        height: 50px;
+    }
+
+    .dow-btn-lbl{
+        width: 95% !important;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        /* background-color: grey; */
+    }
+    .rice-animate{
+        display: none;
+    }
 
 }
