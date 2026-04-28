@@ -254,6 +254,69 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+updateCartCount();
+
+function addToCart(productName, price)
+{
+    let product = {
+        name: productName,
+        price: price
+    };
+
+    cart.push(product);                                   // cart.push(product)   Adds product into array. 
+                                                          // localStorage.setItem()  Stores cart permanently in browser. 
+    localStorage.setItem("cart", JSON.stringify(cart));   // JSON.stringify()         Converts array/object → string     //-> Because localStorage stores only strings. 
+
+    updateCartCount();
+
+    alert("Product Added To Cart");
+}
+
+function updateCartCount()
+{
+  document.getElementById("cart-count").innerText = cart.length;
+}
+
+
+function removeItem(index)
+{
+    // console.log("helow", index);
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.splice(index, 1);          
+
+    localStorage.setItem( "cart", JSON.stringify(cart) );
+    showCart();
+    alert("Item Removed");
+}
+
+
+function showCart()
+{
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];           // JSON.parse()  -> Converts stored string back into array/object.
+        let output = "";
+        
+        cart.forEach((item, index) => {                                      // index -> array index
+            output += `        
+                    <div class="container-fluid px-1 px-md-4">
+                        <div class="row">
+                            <div class="product-card">
+                                <div>
+                                    <img class="w-100 " src="../images/images-final/${ item.name} ">
+                                    <div class="pro-cart-caption">Price: ${ item.price} </div>
+                                    <div class="pro-cart-caption" onclick="removeItem(${ index })">Remove from Cart</div>
+                                    <div class="pro-cart-caption">Buy Now!</div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+        });
+        document.getElementById("cart-items-imgs").innerHTML = output;
+}  
+
 
 
 
