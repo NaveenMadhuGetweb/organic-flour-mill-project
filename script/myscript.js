@@ -244,6 +244,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  window.addEventListener("scroll", () => {
+
+    //console.log(window.scrollY);     // get the scroling value
+
+    let top_label = document.querySelector('.top-info-section');
+
+    if(window.scrollY > 35){
+      // console.log("Scrolled 100px");
+      
+      top_label.classList.add('top-info-section-add');
+    
+    }else{
+      top_label.classList.remove('top-info-section-add');
+    
+    }
+  
+
+  });
+
+
 
 
 });
@@ -276,7 +300,16 @@ function addToCart(productName, price)
 
 function updateCartCount()
 {
-  document.getElementById("cart-count").innerText = cart.length;
+  document.getElementById("cart-count").innerText = cart.length;  // cart item count
+
+  let tot = 0;
+  cart.forEach((item, index) => {
+    tot += item.price; 
+  });
+
+   if(document.getElementById("total")){                           // run if "total" id existing page
+    document.getElementById("total").innerText = tot;              // cart price total 
+   }
 }
 
 
@@ -288,6 +321,7 @@ function removeItem(index)
     cart.splice(index, 1);          
 
     localStorage.setItem( "cart", JSON.stringify(cart) );
+    updateCartCount();  // but it's not working properly need to clear bug later (NOT updating cart count and cart amount)
     showCart();
     alert("Item Removed");
 }
@@ -305,9 +339,11 @@ function showCart()
                             <div class="product-card">
                                 <div>
                                     <img class="w-100 " src="../images/images-final/${ item.name} ">
-                                    <div class="pro-cart-caption">Price: ${ item.price} </div>
-                                    <div class="pro-cart-caption" onclick="removeItem(${ index })">Remove from Cart</div>
-                                    <div class="pro-cart-caption">Buy Now!</div>                                
+                                    <div class="cart-btns">
+                                      <div class="pro-cart-caption">Price: ${ item.price} </div>
+                                      <div class="pro-cart-caption" onclick="removeItem(${ index })">Remove from Cart</div>
+                                      <div class="pro-cart-caption">Buy Now!</div>                                
+                                    </div>
                                 </div>
                             </div>
                         </div>
