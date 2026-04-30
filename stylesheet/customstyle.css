@@ -141,7 +141,15 @@ html {
     position: absolute;
     left: -80px;
 }
-
+.cart-count-caption{
+    position: absolute;
+    border-radius: 50%;
+    padding: 2px;
+    left: -15px;
+    font-size: small;
+    font-weight: lighter;
+    background-color: tan;
+}
 
 
 
@@ -360,8 +368,9 @@ body{
 }
 .product-card div:hover .pro-cart-caption{
     transform:translateY(-10px);
-    transition: transform 2s, opacity 3s,background-color 0s;
+    transition: transform 1s, opacity 2s,background-color 1s;
     opacity: 1;
+    background-color: orangered !important;
 } 
 .pro-cart-caption{
     
@@ -376,6 +385,7 @@ body{
     color: whitesmoke;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    cursor: pointer;
 }
 
 
@@ -661,9 +671,27 @@ input[value="Submit"]{
 .top-info-section{
     background-color:slateblue;
 }
+.top-info-section-add{
+    top:110px;
+    z-index: 101;
+    position:sticky;
+    box-shadow: 0px 10px 15px white;
+}
+
+.navbar-section{
+    background-color:slateblue;
+    position: sticky !important;
+    top: 0px;
+    z-index: 102;
+}
+
 
 .wholesale-product-img{
     width: 50% !important;
+}
+
+.cart-btns div {
+    margin: 10px 0px;
 }
 
 
