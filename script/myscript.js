@@ -295,12 +295,17 @@ function addToCart(productName, price)
 
     updateCartCount();
 
-    alert("Product Added To Cart");
+    // Trigger Bootstrap Modal
+    let myModal = new bootstrap.Modal(document.getElementById('productModalCenter'));
+    myModal.show();
+
 }
 
 function updateCartCount()
 {
-  document.getElementById("cart-count").innerText = cart.length;  // cart item count
+  if(document.getElementById("cart-count")){
+    document.getElementById("cart-count").innerText = cart.length;  // cart item count
+  }
 
   let tot = 0;
   cart.forEach((item, index) => {
@@ -323,7 +328,10 @@ function removeItem(index)
     localStorage.setItem( "cart", JSON.stringify(cart) );
     updateCartCount();  // but it's not working properly need to clear bug later (NOT updating cart count and cart amount)
     showCart();
-    alert("Item Removed");
+
+    let myModal = new bootstrap.Modal(document.getElementById('cartModalCenter'));
+    myModal.show();
+
 }
 
 
